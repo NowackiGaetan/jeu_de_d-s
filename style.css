@@ -1,0 +1,32 @@
+@import url("https://fonts.google.com/specimen/Lato");
+body {
+  font-family: "Lato", sans-serif;
+  width: auto;
+  height: auto;
+  margin: 25px;
+  border: 10px solid rgb(71, 60, 60);
+}
+
+.game {
+  background: #dadada;
+  padding-top: 35px;
+  padding-bottom: 40px;
+}
+
+.newgame {
+  text-align: center;
+}
+
+button {
+  border: none;
+  background: #dadada;
+}
+
+.bi-plus-circle, .bi-box-arrow-in-down, .bi-arrow-repeat {
+  color: rgb(250, 70, 70);
+  vertical-align: baseline;
+}
+
+.row {
+  padding-top: 40px;
+}/*# sourceMappingURL=style.css.map */
