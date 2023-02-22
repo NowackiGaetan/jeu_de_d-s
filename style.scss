@@ -1,7 +1,7 @@
-@import url("https://fonts.google.com/specimen/Lato");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 body{
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     width: auto;
     height: auto;
     margin: 25px;
@@ -14,15 +14,19 @@ body{
     padding-bottom: 40px;
 }
 
-.newgame{
-    text-align: center;
-    
-
-}
-
 button{
     border: none;
     background: #dadada;
+}
+
+/*-----------STYLE DES BOUTONS-----------*/
+.newgame{
+    text-align: center;
+}
+
+.part-middle{
+    display: flex;
+    flex-direction: column;
 }
 
 .bi-plus-circle, .bi-box-arrow-in-down, .bi-arrow-repeat{
@@ -30,7 +34,23 @@ button{
     vertical-align: baseline;
 }
 
+.rollDice{
+    padding-bottom: 15px;
+}
+
+/*--------------STYLE DE LA ZONE DE JEU--------*/
 .row{
     padding-top: 40px;
 }
 
+.imgdice{
+    width: 150px;
+}
+
+.player{
+    font-size: 2em;
+}
+
+.currentScore{
+    background: rgb(250, 70, 70);
+}
