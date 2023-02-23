@@ -21,13 +21,15 @@
             <div class="row">
 <!--Partie gauche-->                
                 <div class="col-sm-4 part-left text-center">
-                    <div class="player" id="player1">PLAYER 1</div>
-                    <div class="score" id="score1"></div>
-                    <div class="currentScore">CURRENT</div>
+                    <div class="player player-active player1" id="player1">PLAYER 1</div>
+                    <div class="score" id="score1">0</div>
+                    <div class="currentScoreBox">CURRENT
+                        <div class="currentScore" id="current1">0</div>
+                    </div>
                 </div>
 <!--Partie du milieu-->                
                 <div class="col-sm-4 part-middle text-center">
-                    <div class="dice" id="dice"><!--<img class="imgdice" src="./dé/face1.png" alt="face1">--></div>
+                    <div class="dice" id="dice"><img class="imgdice" src="./dé/face1.png" alt="face1"></div>
                     <button type="button" class="rollDice" id="rollDice"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-repeat" viewbox="0 0 16 16">
                         <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"/>
                         <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"/>
@@ -39,9 +41,11 @@
                 </div>
 <!--Partie droite-->
                 <div class="col-sm-4 part-right text-center">
-                    <div class="player" id="player2">PLAYER 2</div>
-                    <div class="score" id="score2"></div>
-                    <div class="currentScore">CURRENT</div>
+                    <div class="player player2" id="player2">PLAYER 2</div>
+                    <div class="score" id="score2">0</div>
+                    <div class="currentScoreBox">CURRENT
+                        <div class="currentScore" id="current2">0</div>
+                    </div>
                 </div>
             </div>
         </div>

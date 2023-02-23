@@ -42,6 +42,10 @@ button {
   padding-top: 40px;
 }
 
+.dice {
+  padding-bottom: 125px;
+}
+
 .imgdice {
   width: 150px;
 }
@@ -50,6 +54,18 @@ button {
   font-size: 2em;
 }
 
-.currentScore {
+.score {
+  color: rgb(250, 70, 70);
+  font-size: 5em;
+  padding-bottom: 100px;
+}
+
+.currentScoreBox {
   background: rgb(250, 70, 70);
+}
+
+.currentScore {
+  color: whitesmoke;
+  font-size: 3em;
+  padding: 10px;
 }/*# sourceMappingURL=style.css.map */
