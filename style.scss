@@ -3,7 +3,6 @@
 body{
     font-family: "Lato", sans-serif;
     width: auto;
-    height: auto;
     margin: 25px;
     border: 10px solid rgb(71, 60, 60);
 }
@@ -68,4 +67,40 @@ button{
     color: whitesmoke;
     font-size: 3em;
     padding: 10px;
+}
+ /*-----------EFFETS SUR LES BOUTONS & VISUEL DES JOUEURS-----------------*/
+
+ button:hover{
+    text-decoration: underline;
+ }
+
+.player-active{
+    font-weight: bold;
+    font-size: 2.1em;
+}
+
+/*----------------RESPOONSIVE------------------*/
+
+@media screen and (max-width:780px){
+    .score, .dice{
+        padding-bottom: 50px;
+    }
+}
+    
+@media screen and (max-width:576px) {
+    .score, .dice{
+        padding-bottom: 15px;
+    }
+    .imgdice{
+        width: 100px;
+    }
+    .dice{
+        padding-top: 15px;
+    }
+    .score{
+        font-size: 4em;
+    }
+    .player-active{
+        font-size: 2em;
+    }
 }

@@ -1,10 +1,10 @@
 //variable score
+let randomNumber = 0;
 let scoreActive = 0;
 let playerActive = 1;
 let score = [0, 0];  
 let current1 = document.getElementById("current1");
 let current2 = document.getElementById("current2");
-
 
 //variable joueur
 const player1 = document.getElementById("player1");
@@ -41,19 +41,19 @@ const nextPlayer = function(){
     scoreActive = 0;
     //score courant qui passe sur le joueur 2 qui devient le joueur actif
     document.getElementById(`current${playerActive}`).textContent = 0;
-    playerActive = playerActive === 1 ? 2 : 1;
+    playerActive = playerActive === 0 ? 1 : 0;
     player1.classList.toggle("player-active");
     player2.classList.toggle("player-active");
+    
 };
 
-//enregistrer les points avec le bouton hold
+//cumuler les points avec le bouton hold
 const cumul = function(){
     score[playerActive] += scoreActive;
     document.getElementById(`score${playerActive}`).textContent = score[playerActive];
     //vitoire à 100points
-    if(score[playerActive] >= 20){
+    if(score[playerActive] >= 100){
         document.getElementById(`player${playerActive}`).innerHTML= "<p>YOU WIN!</p>";
-        //document.getElementById(`player${playerActive}`).classList.add("YOU WIN!");
     }else{
         nextPlayer();
     }
@@ -64,6 +64,7 @@ const refresh = function(){
     document.location.reload();
 };
 
+//ecoute des boutons
 roll.addEventListener("click", rolldice);
 hold.addEventListener("click",cumul);
 newgame.addEventListener("click",refresh);
